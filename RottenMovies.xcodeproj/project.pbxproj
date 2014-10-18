@@ -1,1071 +1,520 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1EC43295EFF376A14D54003D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>20102D028C4970BB556AF4D3</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>4280BCA763E8572C42FA1557</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods/Pods.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>7A335B95685B5A5523E7B9BC</key>
-		<dict>
-			<key>fileRef</key>
-			<string>A2B78CD24D0214DF21AD111B</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>A2B78CD24D0214DF21AD111B</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>AAB43AAEF69C313F8282E55F</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA7919EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA8419EF8B1F000C0037</string>
-				<string>B6D2DA9E19EF8B1F000C0037</string>
-				<string>B6D2DA8319EF8B1F000C0037</string>
-				<string>D12919CD3A38CE5FA11B7264</string>
-				<string>BC1921A946268571F50B2BC1</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA7A19EF8B1F000C0037</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0600</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Sarva</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>B6D2DA8119EF8B1F000C0037</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.0.1</string>
-					</dict>
-					<key>B6D2DA9A19EF8B1F000C0037</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.0.1</string>
-						<key>TestTargetID</key>
-						<string>B6D2DA8119EF8B1F000C0037</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>B6D2DA7D19EF8B1F000C0037</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>B6D2DA7919EF8B1F000C0037</string>
-			<key>productRefGroup</key>
-			<string>B6D2DA8319EF8B1F000C0037</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>B6D2DA8119EF8B1F000C0037</string>
-				<string>B6D2DA9A19EF8B1F000C0037</string>
-			</array>
-		</dict>
-		<key>B6D2DA7D19EF8B1F000C0037</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B6D2DAA319EF8B1F000C0037</string>
-				<string>B6D2DAA419EF8B1F000C0037</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B6D2DA7E19EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B6D2DA8E19EF8B1F000C0037</string>
-				<string>B6D2DAB319F0D80D000C0037</string>
-				<string>B6D2DA8B19EF8B1F000C0037</string>
-				<string>B6D2DA8819EF8B1F000C0037</string>
-				<string>B6D2DAAE19EF93B7000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA7F19EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>7A335B95685B5A5523E7B9BC</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA8019EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B6D2DA9119EF8B1F000C0037</string>
-				<string>B6D2DA9619EF8B1F000C0037</string>
-				<string>B6D2DA9319EF8B1F000C0037</string>
-				<string>B6D2DAAF19EF93B7000C0037</string>
-				<string>B6D2DAB419F0D80D000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA8119EF8B1F000C0037</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B6D2DAA519EF8B1F000C0037</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1EC43295EFF376A14D54003D</string>
-				<string>B6D2DA7E19EF8B1F000C0037</string>
-				<string>B6D2DA7F19EF8B1F000C0037</string>
-				<string>B6D2DA8019EF8B1F000C0037</string>
-				<string>AAB43AAEF69C313F8282E55F</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RottenMovies</string>
-			<key>productName</key>
-			<string>RottenMovies</string>
-			<key>productReference</key>
-			<string>B6D2DA8219EF8B1F000C0037</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>B6D2DA8219EF8B1F000C0037</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RottenMovies.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B6D2DA8319EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA8219EF8B1F000C0037</string>
-				<string>B6D2DA9B19EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8419EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA8919EF8B1F000C0037</string>
-				<string>B6D2DA8A19EF8B1F000C0037</string>
-				<string>B6D2DA8C19EF8B1F000C0037</string>
-				<string>B6D2DA8D19EF8B1F000C0037</string>
-				<string>B6D2DA8F19EF8B1F000C0037</string>
-				<string>B6D2DA9219EF8B1F000C0037</string>
-				<string>B6D2DA9419EF8B1F000C0037</string>
-				<string>B6D2DA8519EF8B1F000C0037</string>
-				<string>B6D2DAAB19EF93B7000C0037</string>
-				<string>B6D2DAAC19EF93B7000C0037</string>
-				<string>B6D2DAAD19EF93B7000C0037</string>
-				<string>B6D2DAB019F0D80D000C0037</string>
-				<string>B6D2DAB119F0D80D000C0037</string>
-				<string>B6D2DAB219F0D80D000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RottenMovies</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8519EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA8619EF8B1F000C0037</string>
-				<string>B6D2DA8719EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8619EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8719EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8819EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA8719EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA8919EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8A19EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8B19EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA8A19EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA8C19EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>ViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8D19EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>ViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA8E19EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA8D19EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA8F19EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA9019EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9019EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9119EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA8F19EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA9219EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9319EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA9219EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA9419EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DA9519EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9519EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9619EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DA9419EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DA9719EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>B6D2DAA219EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA9819EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA9919EF8B1F000C0037</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>B6D2DA9A19EF8B1F000C0037</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>B6D2DAA819EF8B1F000C0037</string>
-			<key>buildPhases</key>
-			<array>
-				<string>B6D2DA9719EF8B1F000C0037</string>
-				<string>B6D2DA9819EF8B1F000C0037</string>
-				<string>B6D2DA9919EF8B1F000C0037</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>B6D2DA9D19EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>RottenMoviesTests</string>
-			<key>productName</key>
-			<string>RottenMoviesTests</string>
-			<key>productReference</key>
-			<string>B6D2DA9B19EF8B1F000C0037</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>B6D2DA9B19EF8B1F000C0037</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>RottenMoviesTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>B6D2DA9C19EF8B1F000C0037</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>B6D2DA7A19EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>B6D2DA8119EF8B1F000C0037</string>
-			<key>remoteInfo</key>
-			<string>RottenMovies</string>
-		</dict>
-		<key>B6D2DA9D19EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>B6D2DA8119EF8B1F000C0037</string>
-			<key>targetProxy</key>
-			<string>B6D2DA9C19EF8B1F000C0037</string>
-		</dict>
-		<key>B6D2DA9E19EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DAA119EF8B1F000C0037</string>
-				<string>B6D2DA9F19EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>RottenMoviesTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DA9F19EF8B1F000C0037</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>B6D2DAA019EF8B1F000C0037</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAA019EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAA119EF8B1F000C0037</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>RottenMoviesTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAA219EF8B1F000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DAA119EF8B1F000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DAA319EF8B1F000C0037</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B6D2DAA419EF8B1F000C0037</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.0</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B6D2DAA519EF8B1F000C0037</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B6D2DAA619EF8B1F000C0037</string>
-				<string>B6D2DAA719EF8B1F000C0037</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B6D2DAA619EF8B1F000C0037</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>4280BCA763E8572C42FA1557</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenMovies/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B6D2DAA719EF8B1F000C0037</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>20102D028C4970BB556AF4D3</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenMovies/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B6D2DAA819EF8B1F000C0037</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>B6D2DAA919EF8B1F000C0037</string>
-				<string>B6D2DAAA19EF8B1F000C0037</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>B6D2DAA919EF8B1F000C0037</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenMoviesTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RottenMovies.app/RottenMovies</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>B6D2DAAA19EF8B1F000C0037</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>RottenMoviesTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/RottenMovies.app/RottenMovies</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>B6D2DAAB19EF93B7000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MoviesViewController.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAAC19EF93B7000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MoviesViewController.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAAD19EF93B7000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MoviesViewController.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAAE19EF93B7000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DAAC19EF93B7000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DAAF19EF93B7000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DAAD19EF93B7000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DAB019F0D80D000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>MovieCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAB119F0D80D000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>MovieCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAB219F0D80D000C0037</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>path</key>
-			<string>MovieCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>B6D2DAB319F0D80D000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DAB119F0D80D000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>B6D2DAB419F0D80D000C0037</key>
-		<dict>
-			<key>fileRef</key>
-			<string>B6D2DAB219F0D80D000C0037</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>BC1921A946268571F50B2BC1</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>A2B78CD24D0214DF21AD111B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>D12919CD3A38CE5FA11B7264</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>4280BCA763E8572C42FA1557</string>
-				<string>20102D028C4970BB556AF4D3</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>B6D2DA7A19EF8B1F000C0037</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A335B95685B5A5523E7B9BC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A2B78CD24D0214DF21AD111B /* libPods.a */; };
+		B6D2DA8819EF8B1F000C0037 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DA8719EF8B1F000C0037 /* main.m */; };
+		B6D2DA8B19EF8B1F000C0037 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DA8A19EF8B1F000C0037 /* AppDelegate.m */; };
+		B6D2DA8E19EF8B1F000C0037 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DA8D19EF8B1F000C0037 /* ViewController.m */; };
+		B6D2DA9119EF8B1F000C0037 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DA8F19EF8B1F000C0037 /* Main.storyboard */; };
+		B6D2DA9319EF8B1F000C0037 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DA9219EF8B1F000C0037 /* Images.xcassets */; };
+		B6D2DA9619EF8B1F000C0037 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DA9419EF8B1F000C0037 /* LaunchScreen.xib */; };
+		B6D2DAA219EF8B1F000C0037 /* RottenMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAA119EF8B1F000C0037 /* RottenMoviesTests.m */; };
+		B6D2DAAE19EF93B7000C0037 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */; };
+		B6D2DAAF19EF93B7000C0037 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */; };
+		B6D2DAB319F0D80D000C0037 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAB119F0D80D000C0037 /* MovieCell.m */; };
+		B6D2DAB419F0D80D000C0037 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DAB219F0D80D000C0037 /* MovieCell.xib */; };
+		B6D2DABD19F323E6000C0037 /* MovieDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DABB19F323E6000C0037 /* MovieDetailViewController.m */; };
+		B6D2DABE19F323E6000C0037 /* MovieDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DABC19F323E6000C0037 /* MovieDetailViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B6D2DA9C19EF8B1F000C0037 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B6D2DA7A19EF8B1F000C0037 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B6D2DA8119EF8B1F000C0037;
+			remoteInfo = RottenMovies;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		20102D028C4970BB556AF4D3 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		4280BCA763E8572C42FA1557 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		A2B78CD24D0214DF21AD111B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D2DA8219EF8B1F000C0037 /* RottenMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RottenMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D2DA8619EF8B1F000C0037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D2DA8719EF8B1F000C0037 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B6D2DA8919EF8B1F000C0037 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B6D2DA8A19EF8B1F000C0037 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B6D2DA8C19EF8B1F000C0037 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B6D2DA8D19EF8B1F000C0037 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B6D2DA9019EF8B1F000C0037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B6D2DA9219EF8B1F000C0037 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B6D2DA9519EF8B1F000C0037 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		B6D2DA9B19EF8B1F000C0037 /* RottenMoviesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RottenMoviesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B6D2DAA019EF8B1F000C0037 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B6D2DAA119EF8B1F000C0037 /* RottenMoviesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RottenMoviesTests.m; sourceTree = "<group>"; };
+		B6D2DAAB19EF93B7000C0037 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
+		B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
+		B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		B6D2DAB019F0D80D000C0037 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		B6D2DAB119F0D80D000C0037 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		B6D2DAB219F0D80D000C0037 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
+		B6D2DABA19F323E6000C0037 /* MovieDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieDetailViewController.h; sourceTree = "<group>"; };
+		B6D2DABB19F323E6000C0037 /* MovieDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieDetailViewController.m; sourceTree = "<group>"; };
+		B6D2DABC19F323E6000C0037 /* MovieDetailViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieDetailViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B6D2DA7F19EF8B1F000C0037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A335B95685B5A5523E7B9BC /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D2DA9819EF8B1F000C0037 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B6D2DA7919EF8B1F000C0037 = {
+			isa = PBXGroup;
+			children = (
+				B6D2DA8419EF8B1F000C0037 /* RottenMovies */,
+				B6D2DA9E19EF8B1F000C0037 /* RottenMoviesTests */,
+				B6D2DA8319EF8B1F000C0037 /* Products */,
+				D12919CD3A38CE5FA11B7264 /* Pods */,
+				BC1921A946268571F50B2BC1 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B6D2DA8319EF8B1F000C0037 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2DA8219EF8B1F000C0037 /* RottenMovies.app */,
+				B6D2DA9B19EF8B1F000C0037 /* RottenMoviesTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B6D2DA8419EF8B1F000C0037 /* RottenMovies */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2DA8919EF8B1F000C0037 /* AppDelegate.h */,
+				B6D2DA8A19EF8B1F000C0037 /* AppDelegate.m */,
+				B6D2DA8C19EF8B1F000C0037 /* ViewController.h */,
+				B6D2DA8D19EF8B1F000C0037 /* ViewController.m */,
+				B6D2DA8F19EF8B1F000C0037 /* Main.storyboard */,
+				B6D2DA9219EF8B1F000C0037 /* Images.xcassets */,
+				B6D2DA9419EF8B1F000C0037 /* LaunchScreen.xib */,
+				B6D2DA8519EF8B1F000C0037 /* Supporting Files */,
+				B6D2DAAB19EF93B7000C0037 /* MoviesViewController.h */,
+				B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */,
+				B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */,
+				B6D2DAB019F0D80D000C0037 /* MovieCell.h */,
+				B6D2DAB119F0D80D000C0037 /* MovieCell.m */,
+				B6D2DAB219F0D80D000C0037 /* MovieCell.xib */,
+				B6D2DABA19F323E6000C0037 /* MovieDetailViewController.h */,
+				B6D2DABB19F323E6000C0037 /* MovieDetailViewController.m */,
+				B6D2DABC19F323E6000C0037 /* MovieDetailViewController.xib */,
+			);
+			path = RottenMovies;
+			sourceTree = "<group>";
+		};
+		B6D2DA8519EF8B1F000C0037 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2DA8619EF8B1F000C0037 /* Info.plist */,
+				B6D2DA8719EF8B1F000C0037 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B6D2DA9E19EF8B1F000C0037 /* RottenMoviesTests */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2DAA119EF8B1F000C0037 /* RottenMoviesTests.m */,
+				B6D2DA9F19EF8B1F000C0037 /* Supporting Files */,
+			);
+			path = RottenMoviesTests;
+			sourceTree = "<group>";
+		};
+		B6D2DA9F19EF8B1F000C0037 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B6D2DAA019EF8B1F000C0037 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BC1921A946268571F50B2BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A2B78CD24D0214DF21AD111B /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D12919CD3A38CE5FA11B7264 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4280BCA763E8572C42FA1557 /* Pods.debug.xcconfig */,
+				20102D028C4970BB556AF4D3 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B6D2DA8119EF8B1F000C0037 /* RottenMovies */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D2DAA519EF8B1F000C0037 /* Build configuration list for PBXNativeTarget "RottenMovies" */;
+			buildPhases = (
+				1EC43295EFF376A14D54003D /* Check Pods Manifest.lock */,
+				B6D2DA7E19EF8B1F000C0037 /* Sources */,
+				B6D2DA7F19EF8B1F000C0037 /* Frameworks */,
+				B6D2DA8019EF8B1F000C0037 /* Resources */,
+				AAB43AAEF69C313F8282E55F /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RottenMovies;
+			productName = RottenMovies;
+			productReference = B6D2DA8219EF8B1F000C0037 /* RottenMovies.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B6D2DA9A19EF8B1F000C0037 /* RottenMoviesTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B6D2DAA819EF8B1F000C0037 /* Build configuration list for PBXNativeTarget "RottenMoviesTests" */;
+			buildPhases = (
+				B6D2DA9719EF8B1F000C0037 /* Sources */,
+				B6D2DA9819EF8B1F000C0037 /* Frameworks */,
+				B6D2DA9919EF8B1F000C0037 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B6D2DA9D19EF8B1F000C0037 /* PBXTargetDependency */,
+			);
+			name = RottenMoviesTests;
+			productName = RottenMoviesTests;
+			productReference = B6D2DA9B19EF8B1F000C0037 /* RottenMoviesTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B6D2DA7A19EF8B1F000C0037 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = Sarva;
+				TargetAttributes = {
+					B6D2DA8119EF8B1F000C0037 = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+					B6D2DA9A19EF8B1F000C0037 = {
+						CreatedOnToolsVersion = 6.0.1;
+						TestTargetID = B6D2DA8119EF8B1F000C0037;
+					};
+				};
+			};
+			buildConfigurationList = B6D2DA7D19EF8B1F000C0037 /* Build configuration list for PBXProject "RottenMovies" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B6D2DA7919EF8B1F000C0037;
+			productRefGroup = B6D2DA8319EF8B1F000C0037 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B6D2DA8119EF8B1F000C0037 /* RottenMovies */,
+				B6D2DA9A19EF8B1F000C0037 /* RottenMoviesTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B6D2DA8019EF8B1F000C0037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D2DABE19F323E6000C0037 /* MovieDetailViewController.xib in Resources */,
+				B6D2DA9119EF8B1F000C0037 /* Main.storyboard in Resources */,
+				B6D2DA9619EF8B1F000C0037 /* LaunchScreen.xib in Resources */,
+				B6D2DA9319EF8B1F000C0037 /* Images.xcassets in Resources */,
+				B6D2DAAF19EF93B7000C0037 /* MoviesViewController.xib in Resources */,
+				B6D2DAB419F0D80D000C0037 /* MovieCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D2DA9919EF8B1F000C0037 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1EC43295EFF376A14D54003D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		AAB43AAEF69C313F8282E55F /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B6D2DA7E19EF8B1F000C0037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D2DABD19F323E6000C0037 /* MovieDetailViewController.m in Sources */,
+				B6D2DA8E19EF8B1F000C0037 /* ViewController.m in Sources */,
+				B6D2DAB319F0D80D000C0037 /* MovieCell.m in Sources */,
+				B6D2DA8B19EF8B1F000C0037 /* AppDelegate.m in Sources */,
+				B6D2DA8819EF8B1F000C0037 /* main.m in Sources */,
+				B6D2DAAE19EF93B7000C0037 /* MoviesViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B6D2DA9719EF8B1F000C0037 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B6D2DAA219EF8B1F000C0037 /* RottenMoviesTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B6D2DA9D19EF8B1F000C0037 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B6D2DA8119EF8B1F000C0037 /* RottenMovies */;
+			targetProxy = B6D2DA9C19EF8B1F000C0037 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B6D2DA8F19EF8B1F000C0037 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D2DA9019EF8B1F000C0037 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B6D2DA9419EF8B1F000C0037 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B6D2DA9519EF8B1F000C0037 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B6D2DAA319EF8B1F000C0037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B6D2DAA419EF8B1F000C0037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B6D2DAA619EF8B1F000C0037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4280BCA763E8572C42FA1557 /* Pods.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RottenMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B6D2DAA719EF8B1F000C0037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20102D028C4970BB556AF4D3 /* Pods.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = RottenMovies/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		B6D2DAA919EF8B1F000C0037 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RottenMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RottenMovies.app/RottenMovies";
+			};
+			name = Debug;
+		};
+		B6D2DAAA19EF8B1F000C0037 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = RottenMoviesTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RottenMovies.app/RottenMovies";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B6D2DA7D19EF8B1F000C0037 /* Build configuration list for PBXProject "RottenMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D2DAA319EF8B1F000C0037 /* Debug */,
+				B6D2DAA419EF8B1F000C0037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D2DAA519EF8B1F000C0037 /* Build configuration list for PBXNativeTarget "RottenMovies" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D2DAA619EF8B1F000C0037 /* Debug */,
+				B6D2DAA719EF8B1F000C0037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B6D2DAA819EF8B1F000C0037 /* Build configuration list for PBXNativeTarget "RottenMoviesTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B6D2DAA919EF8B1F000C0037 /* Debug */,
+				B6D2DAAA19EF8B1F000C0037 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B6D2DA7A19EF8B1F000C0037 /* Project object */;
+}

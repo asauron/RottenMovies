@@ -9,6 +9,7 @@
 #import "MoviesViewController.h"
 #import "MovieCell.h"
 #import "UIImageView+AFNetworking.h"
+#import "MovieDetailViewController.h"
 
 @interface MoviesViewController ()
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -54,6 +55,17 @@
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
     return self.movies.count;
 }
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+   // RTMovie *rtMovie = [[RTMovie alloc] initWithDictionary:self.movies[indexPath.row]];
+    
+    MovieDetailViewController *vc = [[MovieDetailViewController alloc] init];
+    vc.movie = self.movies[indexPath.row];
+
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
