@@ -16,6 +16,8 @@
 		B6D2DAA219EF8B1F000C0037 /* RottenMoviesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAA119EF8B1F000C0037 /* RottenMoviesTests.m */; };
 		B6D2DAAE19EF93B7000C0037 /* MoviesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */; };
 		B6D2DAAF19EF93B7000C0037 /* MoviesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */; };
+		B6D2DAB319F0D80D000C0037 /* MovieCell.m in Sources */ = {isa = PBXBuildFile; fileRef = B6D2DAB119F0D80D000C0037 /* MovieCell.m */; };
+		B6D2DAB419F0D80D000C0037 /* MovieCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B6D2DAB219F0D80D000C0037 /* MovieCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +47,9 @@
 		B6D2DAAB19EF93B7000C0037 /* MoviesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MoviesViewController.h; sourceTree = "<group>"; };
 		B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MoviesViewController.m; sourceTree = "<group>"; };
 		B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MoviesViewController.xib; sourceTree = "<group>"; };
+		B6D2DAB019F0D80D000C0037 /* MovieCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MovieCell.h; sourceTree = "<group>"; };
+		B6D2DAB119F0D80D000C0037 /* MovieCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MovieCell.m; sourceTree = "<group>"; };
+		B6D2DAB219F0D80D000C0037 /* MovieCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MovieCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +102,9 @@
 				B6D2DAAB19EF93B7000C0037 /* MoviesViewController.h */,
 				B6D2DAAC19EF93B7000C0037 /* MoviesViewController.m */,
 				B6D2DAAD19EF93B7000C0037 /* MoviesViewController.xib */,
+				B6D2DAB019F0D80D000C0037 /* MovieCell.h */,
+				B6D2DAB119F0D80D000C0037 /* MovieCell.m */,
+				B6D2DAB219F0D80D000C0037 /* MovieCell.xib */,
 			);
 			path = RottenMovies;
 			sourceTree = "<group>";
@@ -211,6 +219,7 @@
 				B6D2DA9619EF8B1F000C0037 /* LaunchScreen.xib in Resources */,
 				B6D2DA9319EF8B1F000C0037 /* Images.xcassets in Resources */,
 				B6D2DAAF19EF93B7000C0037 /* MoviesViewController.xib in Resources */,
+				B6D2DAB419F0D80D000C0037 /* MovieCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B6D2DA8E19EF8B1F000C0037 /* ViewController.m in Sources */,
+				B6D2DAB319F0D80D000C0037 /* MovieCell.m in Sources */,
 				B6D2DA8B19EF8B1F000C0037 /* AppDelegate.m in Sources */,
 				B6D2DA8819EF8B1F000C0037 /* main.m in Sources */,
 				B6D2DAAE19EF93B7000C0037 /* MoviesViewController.m in Sources */,
@@ -422,6 +432,7 @@
 				B6D2DAA719EF8B1F000C0037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B6D2DAA819EF8B1F000C0037 /* Build configuration list for PBXNativeTarget "RottenMoviesTests" */ = {
 			isa = XCConfigurationList;
@@ -430,6 +441,7 @@
 				B6D2DAAA19EF8B1F000C0037 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
