@@ -61,8 +61,7 @@
    // RTMovie *rtMovie = [[RTMovie alloc] initWithDictionary:self.movies[indexPath.row]];
     
     MovieDetailViewController *vc = [[MovieDetailViewController alloc] init];
-    vc.movie = self.movies[indexPath.row];
-
+    vc.movie = [self.movies[indexPath.row];
     [self.navigationController pushViewController:vc animated:YES];
 }
 

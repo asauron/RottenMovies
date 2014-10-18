@@ -27,13 +27,15 @@
     
     self.title = self.movie[@"title"];
     self.titleLabel.text = self.movie[@"title"];
+    self.titleLabel.opaque = NO;
+    self.titleLabel.textColor = [UIColor whiteColor];
+    self.synopsisLabel.opaque = NO;
+    self.synopsisLabel.textColor = [UIColor whiteColor];
+    //self.titleLabel.backgroundColor = [UIColor whiteColor];
     self.synopsisLabel.text = self.movie[@"synopsis"];
     
     
     self.scrollView.contentSize = CGSizeMake(320,1000);
-    self.posterFullView.layer.shadowOpacity = 0.8;
-    self.posterFullView.layer.shadowColor = [UIColor blackColor].CGColor;
-    self.posterFullView.layer.shadowOffset = CGSizeMake(1, 1);
     self.posterFullView.layer.shadowRadius = 2.0;
     self.posterFullView.clipsToBounds = NO;
     NSString *imageString = [[self.movie valueForKeyPath:@"posters.thumbnail"] stringByReplacingOccurrencesOfString:@"_tmb" withString:@"_full"];
