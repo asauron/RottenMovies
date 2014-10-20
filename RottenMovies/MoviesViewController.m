@@ -72,7 +72,7 @@
 
 - (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   // RTMovie *rtMovie = [[RTMovie alloc] initWithDictionary:self.movies[indexPath.row]];
+
     
     MovieDetailViewController *vc = [[MovieDetailViewController alloc] init];
     vc.movie = self.movies[indexPath.row];
