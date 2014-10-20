@@ -10,7 +10,7 @@ Completed all the required parts
 - [x] User sees loading state while waiting for the API.
 - [x] User sees error message when there is a network error
 - [x] User can pull to refresh the movie list.
-- 
+
 Optional
 
 - [ ] All images fade in.
